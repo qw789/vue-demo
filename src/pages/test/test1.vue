@@ -2,7 +2,12 @@
   <div class="test">
     <h1>{{ msg }}</h1>
     <router-link to="/test/test2">前往test2页面</router-link>
-    <h2>Very Cool~ Do you like it ?</h2>
+    <h2>this is  a todolist</h2>
+    <ul>
+      <li v-for="item in items" :class='{decoration:item.isFinished}'>
+         {{item.lable}}
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -12,6 +17,10 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your test1 page',
+      items:[
+      {lable:"eat",isFinished:true},
+      {lable:'working',isFinished:true}
+      ]
     }
   },
   methods:{
