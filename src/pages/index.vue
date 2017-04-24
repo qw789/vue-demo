@@ -2,23 +2,37 @@
   <div class="index">
     <h1>{{ msg }}</h1>
     <router-link to="/test">前往test页面（测试路由）</router-link>
-    
+     <app-banner :cc="listImg"></app-banner>
   </div>
 </template>
 
 <script>
+import Banner from '../components/banner.vue'
+import a from '../assets/images/banner1.jpg'
+import b from '../assets/images/banner1.jpg'
+import c from '../assets/images/banner1.jpg'
 export default {
   name: 'index',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      testimgsrc: ''
+      testimgsrc: '',
+      listImg: [{
+                    url: a
+                }, {
+                    url: b
+                }, {
+                    url: c
+                }]
     }
   },
   mounted() {
   },
   methods:{
-  }
+  },
+  components: {
+            'app-banner': Banner
+        }
 }
 </script>
 
