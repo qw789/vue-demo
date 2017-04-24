@@ -9,7 +9,7 @@
     >
       <router-view></router-view>
     </transition>
-    <load></load>
+    <load ref="load"></load>
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
     load
   },
   mounted: function(){
+    console.log(this.$refs.load)
   },
   methods: {
   }
