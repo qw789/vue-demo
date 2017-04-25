@@ -82,7 +82,7 @@ axios.defaults.baseURL = (process.env.NODE_ENV !=='production' ? config.dev.http
 Vue.prototype.$http = axios
 
 
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   store,
