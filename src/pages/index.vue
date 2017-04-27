@@ -9,8 +9,8 @@
 <script>
 import Banner from '../components/banner.vue'
 import a from '../assets/images/banner1.jpg'
-import b from '../assets/images/banner1.jpg'
-import c from '../assets/images/banner1.jpg'
+import b from '../assets/images/banner2.jpg'
+import c from '../assets/images/banner3.jpg'
 export default {
   name: 'index',
   data () {

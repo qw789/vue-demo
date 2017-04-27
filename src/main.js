@@ -84,7 +84,7 @@ Vue.prototype.$http = axios
 import moment from 'moment';
 Vue.prototype.$moment=moment
 
-/* eslint-disable no-new */
+
 new Vue({
   el: '#app',
   store,
