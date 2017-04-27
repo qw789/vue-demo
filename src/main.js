@@ -81,6 +81,8 @@ axios.interceptors.response.use(function (response) {
 axios.defaults.baseURL = (process.env.NODE_ENV !=='production' ? config.dev.httpUrl:config.build.httpUrl);
 Vue.prototype.$http = axios
 
+import moment from 'moment';
+Vue.prototype.$moment=moment
 
 /* eslint-disable no-new */
 new Vue({

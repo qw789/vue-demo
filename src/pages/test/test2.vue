@@ -42,7 +42,10 @@ export default {
                 return item.toLowerCase().indexOf(key.toLowerCase()) != -1
             });;
         }
-    }
+    },
+  created(){
+    console.log('The time is'+this.$moment().format("HH:mm"))
+  }
 }
   
 
