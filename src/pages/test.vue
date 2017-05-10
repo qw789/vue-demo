@@ -5,6 +5,7 @@
     <h2>--------测试嵌套路由，常用于导航--------</h2>
     <router-link to="/test/test1">前往test1页面</router-link>
     <router-link to="/test/test2">前往test2页面</router-link>
+     <router-link to="/test/test4">前往test4页面</router-link>
     <h2>--------测试Axios获取github数据，打开控制台看效果哦--------</h2>
     <a @click="searchGithub" style="cursor: pointer;">Click this to test Axios</a>
     <h2>--------测试 Modal组件（用到vuex控制状态）--------</h2>

@@ -2,6 +2,7 @@
 	<div class="hello">
 		<h1>{{msg}}{{msgFromFather}}</h1>
 		<button @click="onclickMe">fuck!</button>
+		
 	</div>
 </template>
 <script type="text/javascript">

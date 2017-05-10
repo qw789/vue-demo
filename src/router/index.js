@@ -30,6 +30,12 @@ export default new Router({
           meta: { title: '测试页面2' },
           name: 'test2',
           component: (resolve) => require(['../pages/test/test2.vue'], resolve)
+        },
+        {
+          path: 'test4',
+          meta: { title: '测试页面4' },
+          name: 'test4',
+          component: (resolve) => require(['../pages/test/test4.vue'], resolve)
         }
       ]
     },
