@@ -4,7 +4,6 @@ import Router from 'vue-router'
 Vue.use(Router)
 //这种路由是一种懒加载，不需要再页面引入
 export default new Router({
-  mode: 'history',
   scrollBehavior: () => ({ y: 0 }),
   routes: [
     {
@@ -12,6 +11,12 @@ export default new Router({
       meta: { title: '你好' },
       name: 'hello',
       component: (resolve) => require(['../pages/index.vue'], resolve)
+    },
+    {
+      path: '/websocket',
+      meta: { title: '用websocket聊天' },
+      name: 'websocket',
+      component: (resolve) => require(['../pages/websocket.vue'], resolve)
     },
     {
       path: '/test',

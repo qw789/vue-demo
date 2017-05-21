@@ -2,6 +2,7 @@
   <div class="index">
     <h1>{{ msg }}</h1>
     <router-link to="/test">前往test页面（测试路由）</router-link>
+    <router-link to="/websocket">前往websocket页面进行聊天</router-link>
      <app-banner :cc="listImg"></app-banner>
   </div>
 </template>
