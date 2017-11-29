@@ -8,7 +8,7 @@
 >
 > element-ui 采用按需加载，避免最终打包过大
 
-## [Demo](https://qw789.github.io/)
+## [Demo](https://qw789.github.io/vue-demo-show/)
 
 ## Example
 
