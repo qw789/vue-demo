@@ -69,7 +69,6 @@ axios.interceptors.request.use(function (config) {
 
 // Add a response interceptor
 axios.interceptors.response.use(function (response) {
-  // Do something with response data
   // 关闭loading动画
   store.dispatch('popup/loading/hideLoading')
   return response;
