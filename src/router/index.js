@@ -16,7 +16,8 @@ export default new Router({
       path: '/websocket',
       meta: { title: '用websocket聊天' },
       name: 'websocket',
-      component: (resolve) => require(['../pages/websocket.vue'], resolve)
+      // component: (resolve) => require(['../pages/websocket.vue'], resolve)
+      component: () => import('../pages/websocket.vue')
     },
     {
       path: '/test',

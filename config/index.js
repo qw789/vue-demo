@@ -25,12 +25,20 @@ module.exports = {
   dev: {
     env: require('./dev.env'),
     port: 8080,
-    httpUrl: 'https://api.github.com',
+    // httpUrl: 'http://172.16.0.194:8766',
     autoOpenBrowser: true,
     openBrowserUriHost: 'http://localhost:',
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
+    proxyTable: {
+      // '/api': { //这里是我配置的名字
+      //   target: 'http://172.16.0.194:8766',
+      //   changeOrigin: true, //开启代理
+      //   pathRewrite: {
+      //     '^/api': ''
+      //   }
+      // } 
+    },
     // CSS Sourcemaps off by default because relative paths are "buggy"
     // with this option, according to the CSS-Loader README
     // (https://github.com/webpack/css-loader#sourcemaps)
